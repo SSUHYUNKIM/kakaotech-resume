@@ -72,13 +72,11 @@ section a {
     color: #c8a4e1;
     text-decoration: none;
 }
-
 section a:hover {
     text-decoration: underline;
 }
-
 footer {
-    background-color: #ffffff;
+    background-color: #333;
     color: white;
     text-align: center;
     padding: 1em 0;
@@ -86,4 +84,47 @@ footer {
     width: 100%;
     max-width: 1200px;
     position: relative;
+}
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    header, main, footer {
+        width: 100%;
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    section h2 {
+        font-size: 1.2em;
+    }
+
+    section h3 {
+        font-size: 1em;
+    }
+
+    section p, section ul {
+        font-size: 0.9em;
+    }
+}
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.2em;
+    }
+
+    section h2 {
+        font-size: 1em;
+    }
+
+    section h3 {
+        font-size: 0.9em;
+    }
+
+    section p, section ul {
+        font-size: 0.8em;
+    }
 }
